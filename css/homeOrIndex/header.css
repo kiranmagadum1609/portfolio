@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  z-index: 5;
+}
+
+.header-position {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+
+.left-corner-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.left-corner-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.header-button {
+  width: 150px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.header-button a:link {
+  text-decoration: none;
+}

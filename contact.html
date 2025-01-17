@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/pages/header/contact.css">
+  <link rel="stylesheet" href="css/homeOrIndex/header.css">
+  <link rel="stylesheet" href="css/homeOrIndex/left-sidebar.css">
+  <link rel="stylesheet" href="css/homeOrIndex/general.css">
+</head>
+<body>
+  <div class="outer-div">
+    <div class="header header-position">
+      <div class="left-corner-logo"><img class="logo" src="images/km_pf.png"></div>
+      <div>      
+        <button class="header-button" onclick="location.href='index.html';">Home</button>
+        <button class="header-button" onclick="location.href='index.html';">About</button>
+      </div>
+    </div>
+    
+    <div class="left-sidebar left-sidebar-position">
+      <div class="sidebar-link" onclick="location.href='/index.html';"> 
+        <img src="icons/home.png">       
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link" onclick="location.href='html/sidebar/education.html';">
+        <img src="icons/graduated.png">        
+        <div>Education</div>
+      </div>
+      <div class="sidebar-link" onclick="location.href='documents/KIRAN_MAGADUM_RESUME.pdf';">   
+        <img src="icons/cv.png" >     
+        <div>Resume</div>
+      </div>
+        <div class="sidebar-link" onclick="location.href='html/sidebar/experience.html';"> 
+        <img src="icons/skill.png">       
+        <div>Skills</div>
+      </div>
+      <div class="sidebar-link" onclick="location.href='html/sidebar/experience.html';">  
+        <img src="icons/work.png">      
+        <div>Experience</div>
+      </div>
+      <div class="sidebar-link" onclick="location.href='html/sidebar/certifications.html';"> 
+        <img src="icons/certificate.png">       
+        <div>Certifications</div>
+      </div>
+    </div>
+    <div class="main-page">
+      <div class="container1">
+        <div class="contactform">
+          <h3>Contact Me For Recruitments/Work</h3>
+          <form>
+            <div class="mb-3">
+            <label for="hrEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="hrEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+            <label for="hrPhone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="hrPhone">
+            </div>
+            <div id="checkBox" class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="joinUs">
+            <label class="form-check-label" for="joinUs">ReachOutToMe</label>
+            </div>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="contact-grid"> 
+              <h1>Contact Me Via</h1> 
+              <div class="contact-logo">
+                <div><img class="contact-logo-footer" src="icons/phone-call.png" id="phoneIcon"></div>
+                <div><img class="contact-logo-footer" src="icons/whatsapp.png" id="whatsappIcon"></div>
+                <div><img class="contact-logo-footer" src="icons/gmail.png" id="gmailIcon"></div>
+              </div>
+        </div>
+      </div>
+    
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modalContent"></div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <script>
+    const modal = document.getElementById("contactModal");
+    const modalContent = document.getElementById("modalContent");
+    const closeModal = document.querySelector(".close");
+
+    document.getElementById("phoneIcon").onclick = () => {
+      modalContent.innerHTML = "<p>Phone: +91 9731161901</p>";
+      modal.style.display = "block";
+    };
+
+    document.getElementById("whatsappIcon").onclick = () => {
+      modalContent.innerHTML =
+        "<p>Scan this QR to chat on WhatsApp:</p><img src='documents/whatsappQR.png ' alt='WhatsApp QR' />";
+      modal.style.display = "block";
+    };
+
+    document.getElementById("gmailIcon").onclick = () => {
+      const userEmail = prompt("Please enter your email address:");
+      if (userEmail) {
+        const subject = "Contact Inquiry";
+        const body = "Hello,";
+        const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${userEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(url, "_blank");
+      } else {
+        alert("Email address is required to proceed.");
+      }
+    };
+
+    closeModal.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script> 
+</body>
+</html>

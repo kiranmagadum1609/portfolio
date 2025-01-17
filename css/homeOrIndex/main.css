@@ -1,0 +1,61 @@
+.main-page{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: space-between;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  object-fit: contain;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 150px;
+  padding-right: 20px;
+}
+
+.hello{
+  font-size: 30px;
+  color: burlywood;
+}
+.name{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+.about{
+  font-style: italic;
+  font-size: 30px;
+  color: cornflowerblue;
+}
+.buttons button {
+  border: none;
+  font-size: medium;
+  border-radius: 22px;
+  background-color: papayawhip;
+  padding: 9px 14px;
+  color: dimgrey;
+  margin: 0 3px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.buttons button:hover{
+  background-color: rgb(239, 193, 131);
+}
+
+.image-nature {
+  width: 100%;
+}
+
+.footer-text {
+  display: fixed;
+  color: white;
+  bottom: 0;
+  left: 120px;
+  right: 0;
+}

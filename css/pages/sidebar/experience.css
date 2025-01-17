@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 500;
+}
+.header-button {
+  width: 150px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.header-button a:link {
+  text-decoration: none;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.experience-item {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.experience-item h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.experience-item .company {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.experience-item .location,
+.experience-item .date {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.experience-item .project {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+.experience-item .responsibilities,
+.experience-item .skills-used {
+  margin-top: 15px;
+}
+
+.experience-item h3 {
+  font-size: 1.3rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.experience-item ul li {
+  margin: 5px 0;
+}
+
+.experience-cert {
+  margin-top: 15px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
