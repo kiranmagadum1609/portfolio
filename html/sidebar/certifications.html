@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/pages/sidebar/certifications.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+        <h1>Certifications</h1>
+        <div>      
+            <button class="header-button" onclick="location.href='/index.html';">Home</button>
+        </div>
+    </header>
+
+    <section class="certifications">
+        <div class="certification-item" onclick="toggleDetails('cert1')">
+            <img src="../../documents/certifications/javase8.png" alt="Certification 1 Image" onclick="openModal(this)">
+            <h3>Certification 1: Java SE8 Developer</h3>
+            <p>Issued by: Infosys</p>
+            <div id="cert1" class="certification-details">
+                <p><strong>Certification Date:</strong> September 2022</p>
+                <p><strong>Duration:</strong> 28 months</p>
+                <a href="../../documents/certifications/ITMS-e-Certificate_JAV.pdf">Download Certificate</a>
+            </div>
+        </div>
+        <div class="certification-item" onclick="toggleDetails('cert2')">
+            <img src="../../documents/certifications/springass.png" alt="Certification 2 Image" onclick="openModal(this)">
+            <h3>Certification 2: Spring Associate</h3>
+            <p>Issued by: Infosys</p>
+            <div id="cert2" class="certification-details">
+                <p><strong>Certification Date:</strong> Nov 2022</p>
+                <p><strong>Duration:</strong> 26 months</p>
+                <a href="../../documents/certifications/ITMS-e-Certificate_SPR.pdf">Download Certificate</a>
+            </div>
+        </div>
+        <div class="certification-item" onclick="toggleDetails('cert3')">
+            <img src="../../documents/certifications/angularass.png" alt="Certification 3 Image" onclick="openModal(this)">
+            <h3>Certification 3: Angular Associate</h3>
+            <p>Issued by: Infosys</p>
+            <div id="cert3" class="certification-details">
+                <p><strong>Certification Date:</strong> Oct 2022</p>
+                <p><strong>Duration:</strong> 27 months</p>
+                <a href="../../documents/certifications/ITMS-e-Certificate_Ang.pdf">Download Certificate</a>
+            </div>
+        </div>
+        <div class="certification-item" onclick="toggleDetails('cert4')">
+            <img src="../../documents/certifications/busincomm5.png" alt="Certification 4 Image" onclick="openModal(this)">
+            <h3>Certification 3: Business Communication</h3>
+            <p>Issued by: Infosys</p>
+            <div id="cert4" class="certification-details">
+                <p><strong>Certification Date:</strong> July 2022</p>
+                <p><strong>Duration:</strong> 30 months</p>
+                <a href="../../documents/certifications/ITMS-e-Certificate_COM.pdf">Download Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kiran Magadum. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+
+<script>
+    function openModal(img) {
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+    function toggleDetails(certId) {
+        const certDetails = document.getElementById(certId);
+        certDetails.style.display = certDetails.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>
