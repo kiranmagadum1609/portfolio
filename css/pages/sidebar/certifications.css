@@ -147,10 +147,10 @@ body {
 
 .close {
   position: absolute;
-  top: 15px;
+  top: 50px;
   right: 35px;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   transition: 0.3s;
   cursor: pointer;
