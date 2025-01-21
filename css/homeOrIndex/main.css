@@ -80,13 +80,13 @@
 } 
 
 
-@media (min-width: 1300px) and (max-width: 1600px) {
+@media (min-width: 1300px) and (max-width: 1706px) {
   .main-page {
       grid-template-columns: 300px 1fr;
   }
 }
 
-@media (min-width: 1601px) and (max-width: 2500px) {
+@media (min-width: 1707px) and (max-width: 2500px) {
   .main-page {
       grid-template-columns: 400px 1fr;
   }
