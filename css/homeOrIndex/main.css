@@ -68,6 +68,9 @@
   .main-page {
       grid-template-columns: 1fr 1fr;
   }
+  .main-image img {
+    display: none;
+  }
 }
 
 @media (min-width: 751px) and (max-width: 999px) {
