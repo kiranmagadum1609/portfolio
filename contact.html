@@ -89,28 +89,28 @@
     const modalContent = document.getElementById("modalContent");
     const closeModal = document.querySelector(".close");
 
-    document.getElementById("phoneIcon").onclick = () => {
-      modalContent.innerHTML = "<p>Phone: +91 9731161901</p>";
-      modal.style.display = "block";
-    };
+    // document.getElementById("phoneIcon").onclick = () => {
+    //   modalContent.innerHTML = "<p>Phone: +91 9731161901</p>";
+    //   modal.style.display = "block";
+    // };
 
-    document.getElementById("whatsappIcon").onclick = () => {
-      modalContent.innerHTML =
-        "<p>Scan this QR to chat on WhatsApp:</p><img src='documents/whatsappQR.png ' alt='WhatsApp QR' />";
-      modal.style.display = "block";
-    };
+    // document.getElementById("whatsappIcon").onclick = () => {
+    //   modalContent.innerHTML =
+    //     "<p>Scan this QR to chat on WhatsApp:</p><img src='documents/whatsappQR.png ' alt='WhatsApp QR' />";
+    //   modal.style.display = "block";
+    // };
 
-    document.getElementById("gmailIcon").onclick = () => {
-      const userEmail = prompt("Please enter your email address:");
-      if (userEmail) {
-        const subject = "Contact Inquiry";
-        const body = "Hello,";
-        const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${userEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.open(url, "_blank");
-      } else {
-        alert("Email address is required to proceed.");
-      }
-    };
+    // document.getElementById("gmailIcon").onclick = () => {
+    //   const userEmail = prompt("Please enter your email address:");
+    //   if (userEmail) {
+    //     const subject = "Contact Inquiry";
+    //     const body = "Hello,";
+    //     const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${userEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    //     window.open(url, "_blank");
+    //   } else {
+    //     alert("Email address is required to proceed.");
+    //   }
+    // };
 
     closeModal.onclick = () => {
       modal.style.display = "none";
